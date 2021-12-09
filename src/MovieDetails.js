@@ -6,7 +6,6 @@ class MovieDetails extends Component{
     const movie = this.props.movie;
     const isPopular = profiles.length > 0;
     const users = this.props.users;
-    console.log(" users", users);
     if (!isPopular) {
       return (
         <div>
