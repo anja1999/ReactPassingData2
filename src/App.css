@@ -23,3 +23,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.contact-list {
+  width: 100%;
+  margin: 0;
+  padding: 5;
+  list-style-type: none;
+}
+

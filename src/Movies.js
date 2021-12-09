@@ -3,12 +3,11 @@ import MovieDetails from './MovieDetails';
 
 class Movies extends Component{
   render(){
-    const movies = GetMoviesArray(this.props.movies);
-    
+    const movies = GetMoviesArray(this.props.movies);    
     return(   
       <div>
       	{ movies.map((movie)=>(
-      		<MovieDetails movieProfiles = {this.props.profiles.filter(p => p.favoriteMovieID === movie.id.toString())} movie = {movie}/>
+      		<MovieDetails movieProfiles = {this.props.profiles.filter(p => p.favoriteMovieID === movie.id.toString())} movie = {movie} users = { this.props.users}/>
     	))} 
 	</div>  
       )
